@@ -300,35 +300,64 @@
     background-color: azure;
     display:flex;
     gap: 5px;
+    padding: 5px;
 }
 
 .cart_image_name_button img{
     border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 150px;
+    border-radius: 1px;
+    width: 100px;
     position:relative;
     
 }
 
+.cart_name_stock_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
 .add_num_del{
-    display:flex;
-    flex-direction: row;
-    border:solid;
-    justify-content: space-around;
+    display: flex;
+    border: 1.5px solid;
+    width: 15vw;
+    justify-content: space-between;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+
+.add_num_del_button{
+    flex-grow:1;
+    display: flex;
+    justify-content: center;
+    border: 0.5px solid;
     
 }
 
-.add_num_del_button{
-    width: 100%; 
+.add_num_del_button svg{
+    height: 15px;
+    width: 15px;
+    align-items: center;
 }
 
-.add_num_del .del button{
-    border:solid;
-    color:white;
-    text-align: center;
-    display:inline-block;
+.add_num_del_button_num{
+    flex-grow:1;
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+}
+
+.add_num_del_button button{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
     cursor: pointer;
-    font-size: 16px;
-    width: 100px;
-    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
