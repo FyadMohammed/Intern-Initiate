@@ -378,7 +378,8 @@
     color: white;
     background: black;
     border: 1px;
-    width: 133px;
-    height: 41px;
+    width: 130px;
+    height: 40px;
     font-size:12px; 
+    cursor: pointer;
 }
