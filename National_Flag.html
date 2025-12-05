@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Natflag</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 20px;
+                height: 100%;
+                padding-top: 50px;
+                
+            }
+            .flag{
+                direction: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .flag_box{
+                background-color: green;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+                width : 90%;
+                padding: 20px;
+            }
+
+            .flag_circle{
+                background-color: rgb(50, 12, 118);
+                display:flex;
+                justify-content: center;
+                height : 300px;
+                width: 270px;
+                border-radius: 50%;
+                padding-right: 50px;
+            }
+
+            .grid_flag{
+                margin-top: 10px;
+                width: 80%;
+                
+            }
+            .grid_flag_box{
+                background-color: black;
+                height: 400px;
+                position: relative;
+                
+            }
+            .grid_flag_circle{
+                background-color: red;
+                height: 180px;
+                width: 180px;
+                border-radius: 50%;
+                position:absolute;
+                top: 50%;
+                left: 50%;
+                
+                transform: translate(-50%,-50%);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flag">
+            <div class="flag_box">
+                <div class="flag_circle">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_flag">
+            <div class="grid_flag_box">
+                <div class="grid_flag_circle">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
