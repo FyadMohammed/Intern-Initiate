@@ -252,7 +252,6 @@
 
 .shopping_cart_container{
     background: dimgray;
-    margin-top: 2%;
     padding: 40px;
 }
 
@@ -267,18 +266,10 @@
     border-color:grey;
     background-color: #dddd;
     text-align: justify;
+    font-size: 10px;
 }
 
-.shopping_cart_header h3{
-    font-size: 20px;
-    font-weight: 100;
-}
 
-.shopping_cart_header p{
-    font-size: 20px;
-    text-align: right;
-    font:bold;
-}
 
 /* 2. Cart image, price, item name, button */
 .shopping_cart_main{
@@ -288,6 +279,7 @@
     padding: 10px;
     border:solid;
     border-width:1px;
+    font-size: 13px;
 }
 
 .shopping_price{
@@ -296,19 +288,19 @@
     text-align: right;
 }
 
-.cart_image_name_button{
+.cart_image_name_button {
     background-color: azure;
-    display:flex;
+    display: flex;
     gap: 5px;
     padding: 5px;
+    align-items: center;
 }
 
-.cart_image_name_button img{
+.cart_image_name_button img {
     border: 1px solid #ddd;
     border-radius: 1px;
-    width: 100px;
-    position:relative;
-    
+    width: 72px;
+    position: relative;
 }
 
 .cart_name_stock_button{
@@ -317,8 +309,11 @@
     justify-content: space-between;
 }
 
-
-
+.cart_name_stock{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+}
 
 .add_num_del{
     display: flex;
@@ -334,8 +329,6 @@
     flex-grow:1;
     display: flex;
     justify-content: center;
-    border: 0.5px solid;
-    
 }
 
 .add_num_del_button svg{
@@ -348,7 +341,8 @@
     flex-grow:1;
     display: flex;
     justify-content: center;
-    border: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
 }
 
 .add_num_del_button button{
@@ -360,4 +354,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Shopping Cart Footer */
+.shopping_cart_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    padding-left:10px;
+    padding-right: 10px;  
+    border:1px solid;
+    border-top:0px solid;
+}
+
+.shopping_cart_footer h3, p{
+    font-size: 12px;
+}
+
+
+.shopping_cart_footer button{
+    border-radius: 40px;
+    color: white;
+    background: black;
+    border: 1px;
+    width: 133px;
+    height: 41px;
+    font-size:12px; 
 }
