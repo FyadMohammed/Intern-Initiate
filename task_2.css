@@ -1,0 +1,97 @@
+/* CSS boilerplate */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Header Section */
+
+/* 1. Main Navbar */
+.main_navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    border: 1px solid;
+}
+
+/* 1a. Upper Navbar */
+.upper_navbar{
+    display: flex;
+    flex-direction: row;
+    margin-top:10px ;
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex:1;
+    justify-content: space-between;
+}
+
+.header_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.location svg{
+    height: 30px;
+    width: 30px;
+}
+
+.upper_navbar .location, .mail,.nav_contact{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.logo img{
+    width: auto;
+    height: 49px;
+}
+
+.mail_contact_button{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.nav_contact button{
+    background-color:#1039AD;
+    color: white;
+    border-radius: 10px;
+    width:118px;
+    height: 47px;
+    font-size:16px;
+}
+
+/* 1b. Lower Navbar */
+
+.lower_navbar{
+    align-items: center;
+    background-color: #1039AD;
+    color:white;
+    padding: 30px;
+    margin-top:-30px;
+    margin-left:400px;
+    margin-right:400px;
+    border-radius: 10px;
+
+}
+
+.lower_navbar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex:1;
+    gap: 50px;
+    
+}
+
