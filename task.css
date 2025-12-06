@@ -335,6 +335,12 @@
     height: 15px;
     width: 15px;
     align-items: center;
+    flex:1;
+}
+
+.add_num_del_button:hover svg{
+    background-color: #ddd;
+    transition: 0.3s;
 }
 
 .add_num_del_button_num{
