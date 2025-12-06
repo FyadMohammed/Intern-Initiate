@@ -266,7 +266,7 @@
     border-color:grey;
     background-color: #dddd;
     text-align: justify;
-    font-size: 10px;
+    font-size: 19px;
 }
 
 
@@ -329,7 +329,6 @@
     flex-grow:1;
     display: flex;
     justify-content: center;
-    padding: 0;
 }
 
 .add_num_del_button svg{
@@ -376,7 +375,8 @@
 }
 
 .shopping_cart_footer h3, p{
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 
@@ -385,8 +385,8 @@
     color: white;
     background: black;
     border: 1px;
-    width: 130px;
-    height: 40px;
-    font-size:12px; 
+    width: 209px;
+    height: 44px;
+    font-size:16px; 
     cursor: pointer;
 }
