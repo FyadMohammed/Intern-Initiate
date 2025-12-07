@@ -169,23 +169,55 @@ header section {
 
 /* Registration Form */
 .registration_form{
-    width: 30vw;
+    width: 23vw;
     height: 40vh;
     background-color: #dddd;
     border-radius: 10px;
-    padding:30px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: centers;
-    gap: 30px;
+}
+
+.registration_form h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 .registration_form input[type=text]{
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
 }
+
+.registration_form .bedroom_bathroom{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:20px;
+}
+
+.bedroom_bathroom select{
+    width: 9vw;
+    height: 5vh;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.icon_form{
+    display: flex;
+    gap: 10px;
+}
+
+.bedroom_bathroom select bedroom{
+    color: rgb(91, 89, 89);
+    font: 100;
+}
+
