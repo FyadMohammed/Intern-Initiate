@@ -249,16 +249,40 @@ header section {
 .about_us_description{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 40px;
 }
 
 .about_us_description p{
     font-size: 19px;
     color: rgb(107, 52, 107);
-    padding-left:6px;
+    
 }
 
 .about_us_description h1{
     font-size: 60px;
+}
+
+.about_us_description ul{
+    list-style-type:none;
+    
+    font-size: 20px;
+}
+
+.about_us_description button{
+    width: 15vw;
+    height: 6vh;
+    text-align: center;
+    background-color: #1039AD;
+    font-size: 20px;
+    color:white;
+    border-radius: 7px;
+}
+
+.about_us_description ul li {
+    justify-content: center;
+}
+.about_us_description ul li svg{
+    width: 20px;
+    height: 20px;
 }
