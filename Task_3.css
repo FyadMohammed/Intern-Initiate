@@ -1,0 +1,159 @@
+/* BOILERPLATE CSS */
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    color:#fff;
+    line-height: 1.6;
+}
+
+.container{
+    width: 1700px;
+    margin:0 auto;
+}
+
+/* Header Section */
+
+/* 1. Logo, Search, select, social media, signup, login */
+
+/* Header Container */
+.header_section{
+    display: flex;
+    justify-content: space-between;
+    background-color: #9581a7;
+    
+    padding-left: 50px;
+    padding-right: 50px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    align-items: center;
+}
+
+.search_drop{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #fff;
+    gap: 10px;
+    align-items: center;
+    width:50vw;
+    height: 6vh;
+    border-radius: 40px;
+
+    padding-left: 10px;
+}
+
+.dropdown{
+    width:20%;
+    display: flex;
+    position: relative;
+}
+.dropdown:hover{
+    display:flex;
+    transition:0.3s;
+}
+
+.options{
+    display: flex;
+    position: relative;
+}
+
+.options ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:41px;
+    right:-9px;
+    color: grey;
+    list-style:none;
+    background-color: #fff;
+    padding: 13px;
+    border: 1px solid;
+    z-index: 2;
+}
+.dropdown svg{
+    color:black;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 4px;
+    right:10px;
+}
+
+.dropdown p{
+    color:black;
+    padding-left:10px;
+    height:100%;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    padding-right: 10px;
+}
+
+.search button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 105%;
+    right: 3px;
+    border-radius: 40px;
+    width:20%;
+    background-color: #543ee8;
+    font-size: 15px;
+    color: white;
+    border: transparent;
+}
+.search button svg{
+    width: 15px;
+    height: 15px;
+    color: white;
+}
+.search #search_bar{
+    width:95%;
+    border: none;
+    height:100%;
+    border-left:2px solid grey;
+    padding-left: 10px;
+}
+
+.social_register{
+    display: flex;
+    justify-content: center;
+}
+
+.social_register_login{
+    display: flex;
+    gap: 20px;
+    width: 15%;
+}
+
+.social_register_login button{
+    padding:15px;
+    border: 1px solid;
+    border-radius: 20px;
+    width: 70%;
+    border: none;
+}
+
+.register{
+    background-color: #ffcd20;
+}
+
+.login{
+    background-color: #fff;
+}

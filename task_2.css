@@ -26,6 +26,11 @@ body {
 ============================ */
 
 /* 1. Main Navbar */
+.mobile_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
 .main_navbar {
     display: flex;
     flex-direction: column;
@@ -112,22 +117,33 @@ header section {
     width: full;
 }
 
+
+/* Laptop display */
+    .mobile_header{
+        display:none;  
+    }
+
+/*  Tablet View */
+    .tablet_view{
+        display:none;
+    }
+
 /* Hero Section */
 .hero {
     background-image: url("Task_2/T2_cute_housewife_cleaning_kitchen_trans.png");
     width: auto;
-    height: 100vh;
+    height: 140vh;
     background-color: #455582;
     margin-top: -34px;
     display: flex;
     justify-content: center;
-    padding:60px;
+    padding: 60px;
     align-items: center;
     gap: 63px;
 }
 
 /* Text_button */
-.text_button{
+.text_button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -135,21 +151,21 @@ header section {
     height: auto;
 }
 
-.text_button h1{
+.text_button h1 {
     font-size: 50px;
     font-weight: 500;
 }
 
 
-.button_desc{
+.button_desc {
     display: flex;
     align-items: center;
-    gap:20px;
+    gap: 20px;
     margin-top: 10px;
     background: none;
 }
 
-.button_desc svg{
+.button_desc svg {
     height: 40px;
     width: 40px;
     border-radius: 65%;
@@ -157,7 +173,7 @@ header section {
     ;
 }
 
-.button_desc button{
+.button_desc button {
     height: 60px;
     width: 60px;
     border: 1px solid;
@@ -168,7 +184,7 @@ header section {
 
 
 /* Registration Form */
-.registration_form{
+.registration_form {
     width: 23vw;
     height: auto;
     background-color: #dddd;
@@ -179,12 +195,13 @@ header section {
     justify-content: space-between;
 }
 
-.registration_form h1{
+.registration_form h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 
 }
-.registration_form input[type=text]{
+
+.registration_form input[type=text] {
     width: 100%;
     padding: 14px;
     margin: 8px 0;
@@ -194,13 +211,13 @@ header section {
     box-sizing: border-box;
 }
 
-.registration_form .bedroom_bathroom{
+.registration_form .bedroom_bathroom {
     display: flex;
     justify-content: space-between;
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
-.bedroom_bathroom select{
+.bedroom_bathroom select {
     width: 9vw;
     height: 5vh;
     display: inline-block;
@@ -214,12 +231,12 @@ header section {
     padding-left: 10px;
 }
 
-.icon_form{
+.icon_form {
     display: flex;
     gap: 10px;
 }
 
-.registration_button{
+.registration_button {
     display: flex;
     justify-content: center;
     padding-left: 10px;
@@ -227,62 +244,164 @@ header section {
     padding-bottom: 10px;
 }
 
-.registration_button button{
-    width: 16vw;
-    height: 4vh;
+.registration_button button {
     border: 1px solid #455582;
     background-color: #1039AD;
     color: white;
     font-weight: 400;
     font-size: medium;
     border-radius: 5px;
+    padding:10px;
 }
 
 /* About Us */
 
-.about_us{
-    display:flex;
+.about_us {
+    display: flex;
     width: full;
     background-color: white;
 }
 
-.about_us_description{
+.about_us_description {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 40px;
 }
 
-.about_us_description p{
+.about_us_description p {
     font-size: 19px;
     color: rgb(107, 52, 107);
-    
+
 }
 
-.about_us_description h1{
+.about_us_description h1 {
     font-size: 60px;
 }
 
-.about_us_description ul{
-    list-style-type:none;
-    
+.about_us_description ul {
+    list-style-type: none;
+
     font-size: 20px;
 }
 
-.about_us_description button{
+.about_us_description button {
     width: 15vw;
     height: 6vh;
     text-align: center;
     background-color: #1039AD;
     font-size: 20px;
-    color:white;
+    color: white;
     border-radius: 7px;
 }
 
 .about_us_description ul li {
     justify-content: center;
 }
-.about_us_description ul li svg{
+
+.about_us_description ul li svg {
     width: 20px;
     height: 20px;
+}
+
+
+/* Responsive Design Styling */
+/* Laptop View */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .mobile_wrapper{
+        display: flex;
+    }
+    .upper_navbar{
+        margin-top: 0px;
+        padding-bottom: 30px;
+        padding-left:30px;
+        padding-right: 30px;
+    }
+
+    .lower_navbar{
+        padding-top: 15px;
+        padding-bottom:15px;
+        margin-top: -22px;
+        gap: 10px;
+        width: auto;
+    }
+}
+/* Tablet View*/
+@media (min-width: 768px) and (max-width: 991px){
+    .tablet_view{
+        display: flex;
+        justify-content: space-between;
+        background-color: #ddd;
+        padding-top: 0px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 20vh;
+        align-items: center;
+
+    }
+
+    .location_contact{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        color: rgb(105, 105, 174);
+    }
+
+    .location{
+        display: flex;
+    }
+    .location svg
+    ,.contact svg{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .tablet_logo img{
+        width: 130px;
+        height: 40px;
+    }
+
+    .lower_navbar{
+        display:none;
+    }
+    .upper_navbar{
+        display:none;
+    }
+
+    .book_now_button button{
+        background-color: #1039AD;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    a:-webkit-any-link{
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+/* Small Devices */
+
+@media screen and (max-width: 767px){
+    .mobile_wrapper{
+        display: none;
+    }
+    .tablet_view {
+        display: none;
+    }
+    .upper_navbar{
+        display: none;
+    }
+    .lower_navbar{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .lower_navbar {
+        width: 75vw;
+
+    }
 }
