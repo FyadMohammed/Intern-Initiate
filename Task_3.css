@@ -55,15 +55,15 @@ body{
     display: flex;
     position: relative;
 }
-.dropdown:hover{
-    display:flex;
-    transition:0.3s;
-}
+
 
 .options{
     display: flex;
     position: relative;
+    
+    
 }
+
 
 .options ul{
     display: flex;
@@ -74,9 +74,32 @@ body{
     color: grey;
     list-style:none;
     background-color: #fff;
-    padding: 13px;
-    border: 1px solid;
+    padding: 3px;
+    border-color:transparent;
     z-index: 2;
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 2.3;
+
+    /* Animation */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+
+.options ul li:hover{
+    background-color: #543ee8;
+    transition: 0.3s;
+    color: white;
+}
+
+.dropdown:hover .options ul{
+    opacity:1;
+    visibility: visible;
+    transition: 0.3s;
 }
 .dropdown svg{
     color:black;
@@ -85,6 +108,14 @@ body{
     position: absolute;
     top: 4px;
     right:10px;
+    
+}
+
+
+
+.dropdown:hover svg{
+    transform: rotate(180deg);
+    transition: 0.3s;
 }
 
 .dropdown p{
@@ -118,6 +149,12 @@ body{
     color: white;
     border: transparent;
 }
+
+.search:hover button{
+    transition: 0.4s;
+    background-color: black;
+    color: white;
+}
 .search button svg{
     width: 15px;
     height: 15px;
@@ -146,8 +183,15 @@ body{
     padding:15px;
     border: 1px solid;
     border-radius: 20px;
+    font-size: 15px;
     width: 70%;
     border: none;
+}
+
+.social_register_login button:hover{
+    color:white;
+    background-color: black;
+    transition: 0.4s;
 }
 
 .register{
