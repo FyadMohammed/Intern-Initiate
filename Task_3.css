@@ -463,11 +463,22 @@ header{
 }
 
 /* Course Header Button */
+
+
+.media_container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 50px 100px;
+    gap: 50px;
+    padding-bottom: 80px;
+}
+
 .course-header-button{
     display: flex;
-    padding:10px;
     align-items: center;
     justify-content: space-between;
+    gap: 515px;
 }
 
 .course-header-button button{
@@ -482,3 +493,71 @@ header{
     position: relative;
     color:white;
 }
+
+.course-header{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.media_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 30px;
+    
+}
+.media_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #edeaea;
+    border-radius: 60px;
+
+    padding: 20px 30px;
+    gap: 25px;
+    position:relative;
+}
+
+.media_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.card_text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.business{
+    background:#f6afea;
+}
+.marketing{
+    background:#99e7d0;
+}
+.design{
+    background:#feb98b;
+}
+.finance{
+    background:#afb3eb;
+}
+.lifestyle{
+    background:#e09cf2;
+}
+.cyber{
+    background:#ebaaaa;
+}
+.development{
+    background:#eea4ee;
+}
+
+.photography{
+    background:#a3eaa3;
+}   
