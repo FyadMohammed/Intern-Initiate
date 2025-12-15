@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title> Main Page</title>
-    <link rel="stylesheet" href="Task_3.css" >
+    <link rel="stylesheet" href="Task_3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Import Poppins font with various weights (Regular, Medium, SemiBold, Bold) -->
+    <link href="fonts.googleapis.com" rel="stylesheet">
+
 </head>
 <body>
     <!-- Header Section (logo,categories,dropdown,search..) -->
-     <header>
+     <header >
         <div class="container">
 
             <div class="header_section">
                 <div class="logo">
-                    <img src="Task_3/eduna_logo.svg" alt="">
+                    <img id="img" src="Task_3/eduna_logo.svg " alt="">
                 </div>
                 
                 <div class="search_drop">
@@ -146,11 +152,27 @@
         </div>
     </section>
     <!-- Hero Section -->
-     <section>
+     <section style="background-image: url(Task_3/hero-bg.png);
+     background-size:cover;
+     background-position:no-repeat;
+     background-position: center center;">
         <div class="container">
             <div class="hero_section">
                 <div class="hero_content">
-                    <h1>Best Online Platform to Learn</h1>
+                    <img src="Task_3/shape-1.svg" alt=""
+                    style="
+                    position: absolute;
+                    top: 10px;">
+                    
+                    <img src="Task_3/shape-5.png" alt=""
+                    style="
+                    position:absolute;
+                    bottom:50px;
+                    right: 50px;">
+
+                    <h1 id="headerText">
+                        Best Online Platform to Learn
+                    </h1>
                     <p>We provide online courses for you to learn new skills.</p>
                     <button>
                         Find Courses
@@ -163,16 +185,125 @@
             </div>
 
             <div class="image">
-                <img src="Task_3/hero-img.png" alt="">
+                <div class="roundshape">
+                </div>
+                <img src="Task_3/hero-img.png" alt="" >
+                
             </div>
         </div>
         </div>
      </section>
 
     <!-- Media Section -->
-     <section>
+    <div class="media_section">
+        <div class="container">
+            <section>
+                
+                <div class="media_class">
+                    <div class="media_image">
+                        <img src="Task_3/about-img.png" alt="">
+                        
+                        <img src="Task_3/shape-7.svg" alt=""
+                        style="width: 100px; height: 100px;
+                        position: absolute; top: 100px; left: 163px">
 
-     </section>
+                        <img src="Task_3/shape-8.svg" alt=""
+                        style="width: 100px; height: 100px;
+                        position:absolute; left:580px;bottom:82px;">
+                        
+                        <img src="Task_3/abstract-element-regular.svg" alt=""
+                style="width:180px;height:180px;position:absolute;
+                bottom:100px;right: -50px">
+                    </div>
+                    
+                    <div class="enrollment_box">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                            </svg>
+
+                        </div>
+                        <div class="media_caption">
+                            <h1>9394+</h1>
+                            <p>Enrolled Learners</p>
+                        </div>
+                    </div>
+                    <div class="media_text">
+                        <p style="color:grey">
+                            WELCOME TO EDUNA
+                        </p>
+
+                        <h1 style="font-size:40px;">
+                            Digital Online Academy:
+                            Your Path to Creative Excellence
+                        </h1>
+
+                        <p style="color:grey;
+                        font-size: 18px">
+                            Excedteur sint occaecat cupidatat
+                            non proident sunt in culpa qui 
+                            officia deserunt mollit.
+                        </p>
+                        <ul>
+                            <li>
+                                <div style="
+                                    display:flex;gap:10px;align-items: center;">
+                                    <img src="Task_3/icon-check-blue.svg" 
+                                    alt="" style="width: 15px; height:15px;">
+                                    <p>Our Expert Trainers</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div style="
+                                    display:flex;gap:10px;align-items: center;">
+                                    <img src="Task_3/icon-check-blue.svg" 
+                                    alt="" style="width: 15px; height:15px;">
+                                    <p>Online Remote Learning</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div style="
+                                    display:flex;gap:10px;align-items: center;">
+                                    <img src="Task_3/icon-check-blue.svg" 
+                                    alt="" style="width: 15px; height:15px;">
+                                    <p>Easy to follow curriculum</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div style="
+                                    display:flex;gap:10px;align-items: center;">
+                                    <img src="Task_3/icon-check-blue.svg" 
+                                    alt="" style="width: 15px; height:15px;">
+                                    <p>Lifetime Access</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Course Categories -->
+            <section>
+                <div class="course-header-button">
+                    <div class="course-header">
+                        <p>COURSE CATEGORIES</p>
+                        <h1>Top Categories You Want to Learn</h1>
+                    </div>
+                    <button>
+                        Find Courses
+                        <div class="arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                            </svg>
+                        </div>
+                    </button>
+                    
+                </div>
+            </section>
+        </div>
+    </div>
 
     <!-- Prize Section -->
      <section>
@@ -183,4 +314,5 @@
      <section>
 
      </section>
+
 </body>

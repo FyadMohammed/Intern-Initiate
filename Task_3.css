@@ -1,4 +1,5 @@
 /* BOILERPLATE CSS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *{
     margin:0px;
@@ -7,18 +8,22 @@
 }
 
 body{
-    font-family: sans-serif;
-    background-image: linear-gradient(to top,#eeeddb,#d7d3c1,#bfbba7,#a7a38d,#8f8b73);
+     font-family: "Inter", sans-serif;
     line-height: 1.6;
 }
 
 .container{
-    width: 1700px;
+    width: 1465px;
     margin:0 auto;
 }
 
+
+
 /* Header Section */
 
+header{
+    background-image: url("Task_3/hero-bg.png");
+}
 /* 1. Logo, Search, select, social media, signup, login */
 
 /* Header Container */
@@ -27,11 +32,11 @@ body{
     justify-content: space-between;
     background-color: transparent;
     
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
 
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
 
     align-items: center;
 
@@ -44,10 +49,10 @@ body{
     background-color: #fff;
     gap: 10px;
     align-items: center;
-    width:50vw;
-    height: 6vh;
+    width:800px;
+    height: 56px;
     border-radius: 40px;
-
+    border: 1px solid rgb(195, 194, 194);
     padding-left: 10px;
 }
 
@@ -130,7 +135,7 @@ body{
     position: relative;
     align-items: center;
     width: 80%;
-    height: 80%;
+    height: 75%;
     padding-right: 10px;
 }
 
@@ -147,10 +152,11 @@ body{
     background-color: #543ee8;
     font-size: 15px;
     color: white;
-    border: transparent;
+    border:none;
+    
 }
 
-.search:hover button{
+.search button:hover{
     transition: 0.4s;
     background-color: black;
     color: white;
@@ -203,23 +209,24 @@ body{
 }
 /* Navbar Section */
 .container_2{
-    width: 1880px;
+    width: 1500px;
     margin:0 auto;
 }
 
 .navbar_main{
     display:flex;
-    height:6vh;
     background-color: white;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 72px;
+    padding-right: 72px;
     justify-content: space-between;
-    margin-bottom:30px;
 }
 
 .navbar_main ul{
     display:flex;
-    list-style:none;   
+    list-style:none;
+    gap: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;;  
 }
 
 /* Hovering Anywhere Near the home keeps the content box open */
@@ -230,9 +237,6 @@ body{
 
 .content_icon{
     display: flex;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
     color: black;
     align-items: center;
     gap: 10px;
@@ -251,6 +255,8 @@ body{
     color: black;
     position: absolute;
     border-top: 3px solid;
+    background:#fff;
+    border-radius: 10px;
     
     padding-left: 10px;
     padding-right: 10px;
@@ -317,7 +323,6 @@ body{
     
 }
 
-
 .hero_content{
     display: flex;
     flex-direction: column;
@@ -325,6 +330,7 @@ body{
     align-items: flex-start;
     height: 70vh;
     width: 50%;
+    position:relative;
 }
 .hero_content h1{
     font-size: 60px;
@@ -349,6 +355,14 @@ body{
     color:white;
 }
 
+.roundshape{
+    width: 500px;
+    height: 500px;
+    border-radius:50%;
+    position: relative;
+}
+
+
 .arrow{
     display: flex;
     justify-content: center;
@@ -363,4 +377,108 @@ body{
 .arrow svg{
     width: 30px;
     height: 30px;
+}
+
+.image{
+    position: relative;;
+}
+.roundshape{
+    display:flex;
+    width: 650px;
+    height: 650px;
+    border-radius:50%;
+    position: absolute;
+    background: linear-gradient(180deg, #fff 0%, #d7e1d8 100%);
+    z-index: 1;
+    top:98px;
+    left:30px;
+    overflow:hidden;
+}
+
+.image img{
+    position: relative;
+    z-index: 2;
+}
+
+/* Media Section */
+.media_section{
+    background: url(Task_3/section-bg-1.png);
+}
+
+.media_class{
+    display:flex;
+    padding-top:100px;
+    padding-bottom:100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    gap: 80px;
+    position:relative;
+}
+
+.media_class img{
+    width: 482px;
+    height: 486px;
+    border-radius: 10px 10px 90px 10px;
+}
+
+.enrollment_box{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    bottom: 207px;
+    left: 167px;
+    color:rgb(232, 73, 73);
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:rgb(247, 198, 198);
+    width: 50px;
+    height:50px;
+}
+
+.icon svg{
+    color:red;
+}
+.enrollment_box svg{
+    width: 30px;
+    height: 30px;
+}
+.media_text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.media_text ul{
+    list-style: none;
+}
+
+/* Course Header Button */
+.course-header-button{
+    display: flex;
+    padding:10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-header-button button{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 30px;
+    background-color: #543ee8;
+    position: relative;
+    color:white;
 }
