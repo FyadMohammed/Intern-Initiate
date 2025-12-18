@@ -561,3 +561,404 @@ header{
 .photography{
     background:#a3eaa3;
 }   
+
+/* Online Courses Section */
+.online_courses_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.online_courses_grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px 30px;
+    padding:10px 100px 10px 80px;
+    margin-bottom: 80px;
+}
+
+.online_courses_card{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid;
+    border-radius: 20px;
+    
+    position: relative;
+    overflow:hidden;
+    
+    background-color: #f6f6f6;
+
+}
+
+.course_image img{
+    width: 100%;
+    overflow:hidden;
+}
+
+
+.course_image button{
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    border:none;
+    border-radius: 10px;
+}
+
+
+.course_info{
+    display:flex;
+    flex-direction: column;
+    padding: 0px 30px 15px 30px;
+    gap: 20px;
+}
+
+.course_icons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.icon1, .icon2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;  
+}
+
+.icon1 svg, .icon2 svg {
+    width: 20px;
+    height: 20px;
+}
+
+.courses_rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.courses_rating ul{
+    display: flex;
+    gap: 5px;
+    list-style: none;
+}
+
+
+.courses_rating ul li svg{
+    width: 20px;
+    height: 20px;
+    color: #f5c518;
+    border:none;
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+.courses_rating p{
+    color: grey;
+}
+
+.course_price{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid;
+    padding-top: 10px;
+    border-color: #c4c5c6;
+}
+
+.course_price h3{
+    color: #543ee8;
+}
+
+.course_price p {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color:grey;
+}
+.course_price p svg{
+    width: 20px;
+    height: 20px;
+    
+}
+
+/* Why choose us */
+
+.choose_us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 141px;
+    gap: 100px;
+}
+
+.shape-3{
+    position: absolute;
+    top: 200px;
+    left: 0px;
+}
+
+.choose_text{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:25px;
+    padding: 90px 100px 50px 10px;
+}
+
+.choose_text h1{
+    font-size: 35px;
+}
+.choose_text p{
+    color: grey;
+}
+
+.icon_text{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.choose_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.choose_image img{
+    width: 586px;
+    height: 586px;
+    object-fit: contain;
+}
+
+.icon_box_1{
+    background-color: #dcf3df;
+}
+.icon_box_2{
+    background-color: #f9d6d6;
+}
+
+.new{
+    position: absolute;
+    bottom:30px;
+    left: 30px;
+}
+
+.shape{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+.shape img{
+    width: 70px;
+    height: 70px;
+}
+
+.shape-7{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.shape-7 img{
+    width: 70px;
+    height: 70px;
+}
+
+/* Info Box */
+.sub-container{
+    position: relative;
+}
+
+
+.info_container{
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px;
+}
+
+
+.info_box{
+    display:flex;
+    padding: 18px;
+    background-color: #543ee8;
+    gap: 50px;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: -190px;
+    position: relative;
+}
+
+.info_image{
+    display: flex;
+
+    position: relative;
+}
+
+.info_image img{
+    width: 554px;
+    height: 316px;
+    max-width: 554px;
+
+    object-fit: cover;
+
+    border-radius: 8px 8px 130px 8px;
+}
+
+.shape-12{
+    position:absolute;
+    top: 110px;
+    right: -25px;
+    
+}
+
+.shape-12 img{
+    width: 40px;
+    height: 40px;
+}
+
+.shape-11{
+    position:absolute;
+    bottom: -30px;
+    right: -24px;
+}
+
+.shape-11 img{
+    width: 40px;
+    height: 40px;
+}
+
+.enrollment_grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    padding:10px 40px 10px 40px;
+}
+
+.enrollment-card{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: flex-start;
+    gap: 10px;
+    color: white;
+}
+
+/* Footer Section */
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 50px 70px;
+    gap: 50px;
+    
+}
+
+.logo-text-social{
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0px 30px 30px 30px;
+    width: 30%;
+}
+
+.logo-text-social img{
+    width:140px;
+}
+.logo-text-social p{
+    color: gray;
+}
+
+.social-icon{
+    display:flex;
+    gap: 10px;
+}
+
+.social-icon img{
+    width: 20px;
+}
+
+.links{
+    display:flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    gap: 20px;
+    width: 15%
+}
+
+.links p{
+    color: grey;
+}
+
+
+
+.footer_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.svg-text{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.text{
+    font-size: 16px;
+    color: grey;
+}
+
+.number{
+    font-size: 19px;
+    color:black;
+}
+
+
+.subscription{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.email_button{
+    position: relative;
+}
+
+.email_button input{
+    width: 400px;
+    height: 50px;
+    border-radius:30px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.email_button button{
+    position: relative;
+    border-radius: 40px;
+    background-color: #543ee8;
+    font-size: 15px;
+    color: white;
+    border:none;
+    margin-top: 10px;
+    padding: 15px 50px;
+}
