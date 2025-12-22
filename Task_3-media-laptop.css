@@ -1,0 +1,161 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Small laptops */
+
+  .container{
+    width: 900px;
+  }
+
+  .container_2{
+    width: 900px;
+  }
+
+  .navbar_main{
+    padding: 15px 0px;
+  }
+  .search_drop{
+    width: 540px;
+    height: 50px;
+  }
+
+  .header_section{
+    padding: 14px 3px;
+  }
+
+  .social_register_login{
+    width: auto;
+  }
+  .hero_content img{
+    display: none;
+  }
+
+  .dropdown{
+    width: 31%;
+  }
+  .dropdown p{
+    font-size: 14px;
+  }
+
+  .search button{
+    height: 100%;
+    width: 28%;
+  }
+
+  .roundshape{
+    width: 400px;
+    height: 400px;
+  }
+
+  .image img{
+    width: 400px;
+    height: 400px;
+  }
+
+  .hero_content h1{
+    font-size: 40px;
+  }
+  .hero_content p{
+    font-size: 20px;
+    color: grey;
+  }
+
+  .media_class{
+    padding: 100px 0px;
+    gap: 20px;
+  }
+
+  .media_text{
+    font-size: auto;
+  }
+  
+  .enrollment_box{
+    bottom: 150px;
+    left: -36px;
+  }
+
+  .media_container{
+    padding:0px;
+  }
+
+  .course-header-button{
+    gap:180px;
+  }
+
+  .course-header-button button{
+    padding-left: 33px;
+  }
+
+  .media_grid{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 40px;
+  }
+
+  .media_icon{
+    width: 74px;
+    height: 60px;
+  }
+
+  .online_courses_grid{
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px 0px;
+  }
+
+  .choose_us{
+    padding-left: 0px;
+    padding-right: 0px;
+    gap: 0px;
+  }
+
+  .choose_image img{
+    width: 400px;
+    height: auto;
+  }
+
+  .shape{
+    display: none;
+  }
+
+  .alt-shape-7{
+    display:none;
+  }
+
+  .choose_us{
+    gap: 50px;
+  }
+
+  .choose_text{
+    padding: 90px 5px 100px 10px;
+  }
+  .choose_image .enrollment_box{
+    bottom: 0px;
+    left: -36px;
+  }
+
+  .info_container{
+    padding: 5px;
+    gap: 0px;
+  }
+
+  .info_box{
+    gap: 0px;
+  }
+  
+  .shape-12{
+    display: none;
+  }
+  .info_image img{
+    width: 450px;
+  }
+  .enrollment_grid{
+    padding: 10px;
+  }
+
+  .footer{
+    padding: 50px 0px;
+  }
+  .email_button input{
+    width: auto;
+  }
+  .email_button button{
+    width: auto;
+  }
+}

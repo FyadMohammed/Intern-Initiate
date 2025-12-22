@@ -65,9 +65,7 @@ header{
 
 .options{
     display: flex;
-    position: relative;
-    
-    
+    position: relative;    
 }
 
 
@@ -183,6 +181,7 @@ header{
     display: flex;
     gap: 20px;
     width: 15%;
+    align-items: center;
 }
 
 .social_register_login button{
@@ -207,6 +206,10 @@ header{
 .login{
     background-color: #fff;
 }
+
+.menu_mobile{
+    display: none;
+}
 /* Navbar Section */
 .container_2{
     width: 1500px;
@@ -219,14 +222,15 @@ header{
     padding-left: 72px;
     padding-right: 72px;
     justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;;
 }
 
 .navbar_main ul{
     display:flex;
     list-style:none;
     gap: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;;  
+      
 }
 
 /* Hovering Anywhere Near the home keeps the content box open */
@@ -301,6 +305,11 @@ header{
     padding-right: 20px;
 }
 
+.number_email{
+    display:flex;
+    gap: 5px;
+}
+
 .store_menu_icon{
     display: flex;
     align-items: center;
@@ -315,11 +324,12 @@ header{
 /* Hero Section */
 .hero_section{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: left;
     color:black;
     padding: 10px 50px 10px 50px;
+    overflow: hidden;
     
 }
 
@@ -329,7 +339,7 @@ header{
     justify-content: center;
     align-items: flex-start;
     height: 70vh;
-    width: 50%;
+    width: 45%;
     position:relative;
 }
 .hero_content h1{
@@ -360,6 +370,7 @@ header{
     height: 500px;
     border-radius:50%;
     position: relative;
+    z-index: 0;
 }
 
 
@@ -415,13 +426,42 @@ header{
     position:relative;
 }
 
-.media_class img{
+.abstract-element{
+    position: absolute;
+    width: 150px;
+    bottom:70px;
+    right: 5px;
+}
+
+.main-image{
     width: 482px;
     height: 486px;
     border-radius: 10px 10px 90px 10px;
 }
 
-.enrollment_box{
+.media_image{
+    position: relative;
+}
+
+.shapes{
+    position: absolute;
+}
+
+.shape-7{
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: -50px;
+}
+
+.shape-8{
+    width: 100px;
+    height: 100px;
+    bottom: 0px;
+    right: -8px;
+}
+
+.media_class .enrollment_box{
     display: flex;
     position: absolute;
     align-items: center;
@@ -429,10 +469,12 @@ header{
     background-color: white;
     padding: 5px 20px;
     border-radius: 10px;
-    bottom: 207px;
-    left: 167px;
+    bottom: 145px;
+    left: 60px;
     color:rgb(232, 73, 73);
 }
+
+
 
 .icon{
     display: flex;
@@ -583,7 +625,7 @@ header{
     display:flex;
     flex-direction: column;
     gap: 15px;
-    border: 1px solid;
+    border: none;
     border-radius: 20px;
     
     position: relative;
@@ -744,6 +786,20 @@ header{
     position:relative;
 }
 
+.choose_image .enrollment_box{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    bottom: 40px;
+    left: 60px;
+    color:rgb(232, 73, 73);
+}
+
+
 .choose_image img{
     width: 586px;
     height: 586px;
@@ -774,12 +830,12 @@ header{
     height: 70px;
 }
 
-.shape-7{
+.alt-shape-7{
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
-.shape-7 img{
+.alt-shape-7 img{
     width: 70px;
     height: 70px;
 }
@@ -864,11 +920,10 @@ header{
 
 /* Footer Section */
 .footer{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     padding: 50px 70px;
-    gap: 50px;
+    gap: 50px 70px;
     
 }
 
@@ -876,8 +931,6 @@ header{
     display:flex;
     flex-direction: column;
     gap: 40px;
-    padding: 0px 30px 30px 30px;
-    width: 30%;
 }
 
 .logo-text-social img{
@@ -901,7 +954,6 @@ header{
     flex-direction: column;
     padding: 0px 20px 20px 20px;
     gap: 20px;
-    width: 15%
 }
 
 .links p{
@@ -914,6 +966,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
 }
 
 .svg-text{
@@ -942,6 +995,8 @@ header{
 
 .email_button{
     position: relative;
+    display:flex;
+    flex-direction: column;
 }
 
 .email_button input{
@@ -960,5 +1015,8 @@ header{
     color: white;
     border:none;
     margin-top: 10px;
-    padding: 15px 50px;
+    padding: 15px 0px;
+    width: 37%;
+    
 }
+

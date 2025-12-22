@@ -1,0 +1,187 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Tablets */
+
+  .container{
+    width: 768px;
+  }
+
+  .container_2{
+    width: 768px;
+  }
+
+  .header_section{
+    padding: 13px 10px;
+    width: 100%;
+  }
+
+  .dropdown{
+    display:none;
+    width: auto;
+  }
+
+  .search{
+    width:100%;
+  }
+
+  .search_drop{
+    width: 40%;
+  }
+
+  .search #search_bar{
+    border:none;
+  }
+
+  .search button{
+    width: 30%;
+  }
+
+  .social_register_login{
+    width: auto;
+  }
+
+  .menu_mobile{
+    display: flex;
+  }
+
+  .menu_mobile svg{
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar_main{
+    padding: 15px 0px;
+  }
+  .navbar_main ul{
+    display: none;
+  }
+
+  .contact{
+    width: 100%;
+  }
+
+  .hero_section{
+    flex-direction: column;
+    padding: 35px 10px 0px 10px;
+    gap : 40px;
+    justify-content: center;
+  }
+
+  .hero_content{
+    height:auto;
+    width: auto;
+    text-align: left;
+  }
+
+  .hero_content img{
+    display: none;
+  }
+
+  .hero_content h1{
+    font-size: 40px;
+  }
+
+  .hero_content p{
+    font-size: 15px;
+    color: grey;
+  }
+
+  .roundshape{
+    width:400px;
+    height: 400px;
+    top: 130px;
+  }
+  
+  .image{
+    align-items: center !important;
+    gap: 40px;
+  }
+
+  .image img{
+    width: 400px;
+    height: 480px;
+  }
+
+  .media_class{
+    flex-direction: column-reverse;
+    padding: 100px;
+  }
+
+  .main-image{
+    width: 460px;
+    height: 460px;
+  }
+
+  .enrollment_box{
+    bottom:155px;
+    left: 24px;
+  }
+
+  .shape-8{
+    bottom: 0px;
+    right: 80px;
+  }
+
+  .abstract-element{
+    display: none;
+  }
+
+  .media_container{
+    padding: 50px 20px;
+    align-items: flex-start;
+    
+  }
+
+  .course-header-button{
+    gap:10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .media_grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap:30px 80px;
+  }
+
+  .media_card{
+    padding: 20px;
+    gap: 35px;
+  }
+
+  .online_courses_grid{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 5px;
+  }
+
+  .choose_us{
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .shape{
+    display: none;
+  }
+
+  
+  .info_box{
+    gap: 0px;
+    flex-direction: column;
+    margin-top: -10px;
+  }
+
+  .enrollment_grid{
+    gap: 10px 100px;
+    width: 100%;
+  }
+
+  .enrollment-card{
+    padding: 10px;
+  }
+  
+  .shape-11, .shape-12{
+    display:none;
+  }
+
+  .footer{
+    grid-template-columns: repeat(2,1fr);
+  }
+}

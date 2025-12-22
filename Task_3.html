@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <title> Main Page</title>
     <link rel="stylesheet" href="Task_3.css">
+    <link rel="stylesheet" href="Task_3-media.css">
+    <link rel="stylesheet" href="Task_3-media-laptop.css">
+    <link rel="stylesheet" href="Task_3-media-Tablet.css">
+    <link rel="stylesheet" href="Task_3-media-Mobile.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Import Poppins font with various weights (Regular, Medium, SemiBold, Bold) -->
     <link href="fonts.googleapis.com" rel="stylesheet">
 
@@ -55,12 +63,18 @@
                 <div class="social_register_login">
                     <button class="register">Register</button>
                     <button class="login">Login</button>
+                    <div class="menu_mobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                        </svg>
+                    </div>
                 </div>
+
+                
             </div>
         </div>
      </header>
     
-
      <!-- Navbar Section -->
     <section>
         <div class="container_2">
@@ -136,8 +150,12 @@
                 </ul>
 
                 <div class="contact">
-                    <p>0987654321</p>
-                    <p>helloeduna@gmail.com</p>
+
+                    <div class="number_email">
+                        <p>+987654321</p>
+                        <p>helloeduna@gmail.com</p>
+                    </div>
+                    
                     <div class="store_menu_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
@@ -151,10 +169,11 @@
             </div>
         </div>
     </section>
+
     <!-- Hero Section -->
      <section style="background-image: url(Task_3/hero-bg.png);
      background-size:cover;
-     background-position:no-repeat;
+     background-repeat:no-repeat;
      background-position: center center;">
         <div class="container">
             <div class="hero_section">
@@ -201,19 +220,14 @@
                 
                 <div class="media_class">
                     <div class="media_image">
-                        <img src="Task_3/about-img.png" alt="">
+                        <img src="Task_3/about-img.png" alt=""
+                        class="main-image">
                         
                         <img src="Task_3/shape-7.svg" alt=""
-                        style="width: 100px; height: 100px;
-                        position: absolute; top: 100px; left: 163px">
+                        class="shapes shape-7">
 
                         <img src="Task_3/shape-8.svg" alt=""
-                        style="width: 100px; height: 100px;
-                        position:absolute; left:580px;bottom:82px;">
-                        
-                        <img src="Task_3/abstract-element-regular.svg" alt=""
-                style="width:180px;height:180px;position:absolute;
-                bottom:100px;right: -50px">
+                        class="shapes shape-8">
                     </div>
                     
                     <div class="enrollment_box">
@@ -281,6 +295,9 @@
                             </li>
                         </ul>
                     </div>
+
+                    <img src="Task_3/abstract-element-regular.svg" alt=""
+                        class="abstract-element">
                 </div>
             </section>
 
@@ -704,7 +721,11 @@
      </section>
 
 <!-- Why choose us -->
-     <section style="background: url(Task_3/section-bg-2.png); ">
+     <section 
+     style="background: url(Task_3/section-bg-2.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center ">
         <div class="container">
             <div class="choose_us">
                 <div class="choose_text">
@@ -752,7 +773,7 @@
                 </div>
                 <div class="choose_image">
                     <img src="Task_3/why-choose-img.png" alt="">
-                    <div class="enrollment_box new">
+                    <div class="enrollment_box">
                         <div class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
@@ -769,7 +790,7 @@
                         <img src="Task_3/shape-10.svg" alt="">
                     </div>
 
-                    <div class="shape-7">
+                    <div class="alt-shape-7">
                         <img src="Task_3/shape-7.svg" alt="">
                     </div>
                     
@@ -816,10 +837,11 @@
         </div>
      </section>
 
-
+<!-- Footer section -->
      <footer>
         <div class="container">
             <div class="footer">
+
                 <div class="logo-text-social">
                     <img src="Task_3/eduna_logo.svg" alt="">
                     <p>Excepteur sint occaecat cupidatat non 
