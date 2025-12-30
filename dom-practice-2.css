@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    width: 700px;
+    margin-left: 60px;
+}
+
+section {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.dark section {
+    border-color: white;
+}
+
+section.sec-dark {
+    background-color: aqua;
+    color: black;
+    border-color: black;
+}
+
+#screen {
+    height: 400px;
+    width: 600px;
+    background: #222;
+    color: white;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#fragments {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.fragment {
+    position: absolute;
+    background: #222;
+    animation: break 1s forwards;
+}
+
+@keyframes break {
+    to {
+        transform: translate(var(--x), var(--y)) rotate(var(--r));
+        opacity: 0;
+    }
+}
+
+#anotherScreen {
+    height: 500px;
+    width: 600px;
+    padding: 10px;
+    background-color: #222;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#anotherFragments {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.anotherFragments{
+    background: #233;
+    position: absolute;
+    animation: break 2s forwards;
+}
+

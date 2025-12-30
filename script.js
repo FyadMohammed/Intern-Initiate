@@ -1,17 +1,18 @@
-function countSelected(selectObject) {
-  let numberSelected = 0;
-  for (let i = 0; i < selectObject.options.length; i++) {
-    if (selectObject.options[i].selected) {
-      numberSelected++;
-    }
-  }
-  return numberSelected;
-}
+const data = {
+  "name" : "Anna",
+  "age" : 30,
+  "isStudent" : false,
+  "address" : {
+    "street" : "123 main st",
+    "city" : "New York",
+    "postalCode": "100001"
+  },
 
-const btn = document.getElementById("btn");
+  "hobbies" :["travelling","photography","cooking"],
+  "hasPets" : null
+};
 
-btn.addEventListener("click", () => {
-  const musicTypes = document.getElementById("musicTypes")
 
-  console.log(`You have selected ${countSelected(musicTypes)} option(s).`);
-});
+const dataObject = JSON.parse(data);
+
+console.log(dataObject);

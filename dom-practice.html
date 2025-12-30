@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <meta charset="UTF-8" />
+  <title>DOM Manipulation practice</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    section {
+      border: 1px solid;
+      padding: 12px;
+      margin-bottom: 20px;
+    }
+
+    .active {
+      color: white;
+      background: black;
+      padding: 6px;
+    }
+
+    .done {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+
+  <body>
+    <h1>Dom Manipulation All Exercises</h1>
+    <!-- ================= EXERCISE 1 ================= -->
+    <section>
+      <h2>1. Copy Text</h2>
+      <p id="source">I am the source text</p>
+      <button id="copyBtn">Copy Text</button>
+      <p id="target"></p>
+    </section>
+    <!-- ================= EXERCISE 2 ================= -->
+    <section>
+      <h2>2. Multiple Elements</h2>
+
+      <ul>
+        <li class="item">Apple</li>
+        <li class="item">Banana</li>
+        <li class="item">Mango</li>
+      </ul>
+    </section>
+
+    <!-- ================= EXERCISE 3 ================= -->
+    <section>
+      <h2>3. Change Styles</h2>
+      <p id="styleText">Watch me change</p>
+      <button id="styleBtn">Change Style</button>
+    </section>
+
+    <!-- ================= EXERCISE 4 ================= -->
+    <section>
+      <h2>4. Toggle Class</h2>
+      <p id="box">I am a box</p>
+      <button id="toggleBtn">Toggle Class</button>
+    </section>
+
+    <!-- ================= EXERCISE 5 ================= -->
+    <section>
+      <h2>5. Create Elements</h2>
+      <button id="addItem">Add Item</button>
+      <ul id="list"></ul>
+    </section>
+
+    <!-- ================= EXERCISE 6 ================= -->
+    <section>
+      <h2>6. Remove on Click</h2>
+      <p>Click any item below to remove it</p>
+    </section>
+
+    <!-- ================= EXERCISE 7 ================= -->
+    <section>
+      <h2>7. Input → Output</h2>
+      <input type="text" id="nameInput" />
+      <button id="submitBtn">Submit</button>
+      <p id="output"></p>
+    </section>
+
+    <!-- ================= EXERCISE 8 ================= -->
+    <section>
+      <h2>8. Real-time Typing</h2>
+      <input type="text" id="liveInput" />
+      <p id="count">Characters: 0</p>
+    </section>
+
+    <script src="dom-practice.js"></script>
+  </body>
+</html>

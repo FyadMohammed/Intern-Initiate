@@ -160,5 +160,154 @@ const fun = (()=> {
     return x*y;
 })();
 
-console.log(fun(3,5));
+console.log(fun);
 
+//8. Functions Scopes and closures
+//a. Example : 1
+const num1 = 20;
+const num2 = 3;
+const name = "John";
+
+// This function is defined in the global scope
+function multiply() {
+  return num1 * num2;
+}
+
+console.log(multiply()); // 60
+
+// A nested function example
+function getScore() {
+  const num1 = 2;
+  const num2 = 3;
+
+  function add() {
+    return `${name} scored ${num1 + num2}`;
+  }
+
+  return add();
+}
+
+console.log(getScore());
+
+
+//b. Typical example of a closure
+
+/*
+const pet = function(name){
+    const getName = function () {
+        return name;
+    };
+
+    return getName;
+};
+
+const myPet = pet("Vivi");
+console.log(myPet());
+ */
+
+//c. A more complex example of closure
+
+const createPet = function (name) {
+
+    let sex;
+
+    const pet = {
+        setName(newName){
+            name = newName;
+        },
+
+        getName() {
+            return name;
+        },
+
+        getSex() {
+            return sex;
+        },
+
+        setSex(newSex){
+            if(
+                typeof newSex === "string" &&
+                (newSex.toLowerCase() === "male" || newSex.toLowerCase() === "female")
+            ){
+                sex = newSex;
+            }
+        },
+    };
+
+    return pet;
+};
+
+const pet = createPet("Vivie");
+console.log(pet.getName());
+
+pet.setName("Olivier");
+pet.setSex("male");
+
+console.log("The name is set to :",pet.getSex());
+console.log("The sex is set to:",pet.getName());
+
+//d. Another Example
+
+console.log("\nApi code return?");
+const getCode = (function () {
+    const apiCode = '0d03fg3';
+
+    return function () {
+        return apiCode;
+    };
+})();
+
+console.log(getCode());
+
+
+// 9. Name conflicts
+console.log("\nAn example of name conflicts where the output is 20 instead of 10");
+function outside(){
+    const x = 10;
+    function inside(){
+        return x * 2;
+    }
+
+    return inside;
+}
+
+console.log(outside()());
+//but if we don't give any parameter in inside() then
+//it will work good. Because we havent
+
+//10. Using the arguments object
+
+//arguments is already created when a function
+//it works like an array but not an array
+console.log("\nUsing arguments in the object");
+
+function myConcat(separator) {
+  let result = ""; // initialize list
+
+  // iterate through arguments
+  for (let i = 1; i < arguments.length; i++) {
+    result += arguments[i] + separator;
+  }
+  return result;
+}
+
+console.log(myConcat(";", "red", "orange", "blue"));
+
+// 11. Rest parameters
+
+console.log("\nAn example of rest parameters\n");
+
+function multiply(multiplier, ...theArgs ){
+    return theArgs.map((x)=> multiplier * x);
+}
+
+const arr = multiply(2,1,2,3);
+console.log(arr);
+
+// 12. Arrow parameters:
+
+const a = ["apple" , "ball", "cat", "doll", "elephant"];
+var a1 = [1,2,3,4,5];
+
+console.log(a.map((s)=>{return s.length}));
+console.log(a1.map((num)=>{return num**2}));

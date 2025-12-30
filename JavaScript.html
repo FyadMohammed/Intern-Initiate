@@ -1,20 +1,122 @@
 <!DOCTYPE html>
+
 <html>
-    <body>
-        <form name="selectForm">
-            <label for="musicTypes">
-            Choose some music types, then click the button below :
-            </label>
+  <body>
+    <h1>JavaScript Functions</h1>
+    <h2>Function Sequence</h2>
+    <p>JavaScript functions are executed in the sequence they are called.</p>
 
-            <select name="musicTypes" id="musicTypes" multiple>
-                <option selected> R&amp;B</option>
-                <option> Jazz </option>
-                <option> Blues</option>
-                <option> Classical</option>
-            </select>
+    <p id="demo"></p>
+    <p id="demo_2"></p>
+    <p id="demo_3"></p>
+    <script>
+      function DisplayData(some, str) {
+        document.getElementById(str).innerHTML = some;
+      }
 
-        <button id="btn" type="button">How many are selected</button>
-        </form>
-        <script src="script.js"></script>
-    </body>
+      function myCalculator(a, b, callback) {
+        callback(a + b);
+      }
+
+      numArray = [1, 2, 3, 4, -1, -2, -3];
+
+      function removeNeg(numbers, callback) {
+        const myArray = [];
+        for (const x of numbers) {
+          if (callback(x)) {
+            myArray.push(x);
+          }
+        }
+        return myArray;
+      }
+      myCalculator(5, 5, (result) => DisplayData(result, "demo"));
+      DisplayData(
+        removeNeg(numArray, (x) => x >= 0),
+        "demo_2"
+      );
+
+      /*
+        
+    //   Displaying another webpage in this webpage
+      let myPromise = new Promise(function (myResolve, myReject) {
+        let req = new XMLHttpRequest();
+        req.open("GET", "mycar.html");
+        
+        req.onload = function () {
+
+          if (req.status == 200) {
+            myResolve(req.response);
+          } else {
+            myReject("File Not found");
+          }
+        };
+
+        req.send();
+      });
+
+      myPromise.then(
+        function(value) {myDisplayer(value);},
+        function(error) {myDisplayer(error);}
+      )
+      */
+
+      let myPromise1 = new Promise((resolve, reject) => {
+        setTimeout(resolve, 200, "king");
+      });
+
+      let myPromise2 = new Promise((resolve, reject) => {
+        setTimeout(resolve, 300, "queen");
+      });
+
+      let myPromise3 = new Promise((resolve, reject) => {
+        setTimeout(reject, 100, "jack");
+      });
+
+      Promise.allSettled([myPromise1, myPromise2, myPromise3]).then(
+        (results) => {
+          results.forEach((x) => {
+            if (x.status === "fulfilled") {
+              myDisplayer(x.value);
+            } else {
+              myDisplayer("Rejected: " + x.reason);
+            }
+          });
+        }
+      );
+      function myDisplayer(some) {
+        document.getElementById("demo_3").innerHTML += some + "<br>";
+      }
+
+      async function newFunction() {
+        let promise = new Promise((resolve, reject) => {
+          setTimeout(() => resolve("Done!"), 3000);
+        });
+
+        let result = await promise;
+        console.log(result);
+      }
+
+      newFunction();
+
+      async function myAsyncFunction() {
+        try {
+          let result = await Promise.resolve("okay boomer!!");
+          console.log(result);
+        } catch (message) {
+          console.log("Caught Error", message);
+        }
+      }
+
+      myAsyncFunction();
+      
+
+      async function sequential() {
+        let promise1 = await new Promise((res) => setTimeout(() => res("A"), 500));
+        let promise2 = await new Promise((res) => setTimeout(() => res("B"), 500));
+        console.log(promise1,promise2);
+      }
+
+      sequential();
+    </script>
+  </body>
 </html>
