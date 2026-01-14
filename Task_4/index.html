@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <title>task-4</title>
+  </head>
+  <body>
+
+    <!-- Header Section -->
+    <header class="bg-purple-500 shadow-md sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16"
+      >
+        <div class="flex items-center space-x-4">
+          <img class="h-8" src="/src/assets/reshot-icon-game.svg" />
+        </div>
+        <div class="flex items-center justify-center">
+          <a href="/" class="hidden md:inline-block text-xl font-bold ">Gamehub</a>
+        </div>
+
+        <div class="flex items-center space-x-3">
+          <div class="flex flex-row items-center justify-between gap-3">
+            <button class="md:hidden p-2" aria-label="Open Search">
+              🔍</button>
+            <button
+              class="bg-blue-500 shadow-2xl text-white text-shadow-black hover:bg-blue-700 cursor-pointer px-3 py-2 rounded-2xl"
+            >
+              Login
+            </button>
+            <button
+              class="bg-blue-500 shadow-2xl text-white text-shadow-black hover:bg-blue-700 cursor-pointer px-3 py-2 rounded-2xl"
+            >
+              Register
+            </button>
+          </div>
+          <button class="md:hidden">Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-gradient-to-r from-indigo-50 via-white to-sky-50">
+      <div
+        class="max-w-7xl flex flex-col items-center justify-center py-20 gap-4"
+      >
+        <h1 class="text-3xl font-bold">Welcome to Gamehub</h1>
+        <p class="mt-4 text-gray-600">Your ultimate destination for all gaming needs.</p>
+        <input
+              type="search"
+              aria-label="Search games"
+              class="search-input border rounded-md pl-10 pr-3 py-2 w-104 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Search games..."
+            />
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 grid gap-6 grid-cols-1 md:grid-cols-3">
+        <div class="p-6 border rounded-lg flex flex-col justify-center items-center">
+          <h3 class="font-bold">Popular Games</h3>
+        </div>
+        <div class="p-6 border rounded-lg flex flex-col justify-center items-center">
+          <h3 class="font-bold">Popular Games</h3>
+        </div>
+        <div class="p-6 border rounded-lg flex flex-col justify-center items-center">
+          <h3 class="font-bold">Popular Games</h3>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="max-w-7xl mx-auto px-4 py-6 text-1xl text-center text-gray">
+        © 2026 Gamehub. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
