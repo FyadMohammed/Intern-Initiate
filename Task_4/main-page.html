@@ -15,9 +15,17 @@
       }
       [data-carousel-slide] {
         flex: 0 0 100%;
-        position: relative; /* captions positioned relative to each slide */
-      }
+        will-change: transform;
+        transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+        transform: translate(0,0,0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
 
+      }
+      [data-carousel-slide] {
+        flex : 0 0 100%;
+        position: relative;
+      }
       /* Make caption show above the image */
       [data-carousel-slide] .caption {
         z-index: 10;
