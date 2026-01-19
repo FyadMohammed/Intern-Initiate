@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+/* Carousel layout fixes */
+[data-carousel-track],
+[data-simple-track] {
+  display: flex;
+  will-change: transform;
+}
+
+[data-carousel-slide],
+[data-simple-slide] {
+  flex: 0 0 100%; /* full width per slide */
+  position: relative; /* contains absolute captions */
+}
+
+[data-carousel-slide] .caption,
+[data-simple-slide] .caption {
+  z-index: 10; /* ensure caption sits above image */
+}
+
+/* Hide non-active slides until activated */
+[data-carousel-slide][aria-hidden="true"],
+[data-simple-slide][aria-hidden="true"] {
+  visibility: hidden;
+}
+[data-carousel-slide][aria-hidden="false"],
+[data-simple-slide][aria-hidden="false"] {
+  visibility: visible;
+}

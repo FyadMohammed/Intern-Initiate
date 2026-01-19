@@ -8,7 +8,6 @@
     <title>task-4</title>
   </head>
   <body>
-
     <!-- Header Section -->
     <header class="bg-purple-500 shadow-md sticky top-0 z-50">
       <div
@@ -17,14 +16,15 @@
         <div class="flex items-center space-x-4">
           <img class="h-8" src="/src/assets/reshot-icon-game.svg" />
         </div>
-        <div class="flex items-center justify-center">
-          <a href="/" class="hidden md:inline-block text-xl font-bold ">Gamehub</a>
+        <div class="flex items-center justify-center space-x-4">
+          <a href="/" class="hidden md:inline-block text-3xl text-center font-bold"
+            >Gamehub</a
+          >
         </div>
 
         <div class="flex items-center space-x-3">
           <div class="flex flex-row items-center justify-between gap-3">
-            <button class="md:hidden p-2" aria-label="Open Search">
-              🔍</button>
+            <button class="md:hidden p-2" aria-label="Open Search">🔍</button>
             <button
               class="bg-blue-500 shadow-2xl text-white text-shadow-black hover:bg-blue-700 cursor-pointer px-3 py-2 rounded-2xl"
             >
@@ -41,39 +41,86 @@
       </div>
     </header>
 
-    <section class="bg-gradient-to-r from-indigo-50 via-white to-sky-50">
-      <div
-        class="max-w-7xl flex flex-col items-center justify-center py-20 gap-4"
-      >
-        <h1 class="text-3xl font-bold">Welcome to Gamehub</h1>
-        <p class="mt-4 text-gray-600">Your ultimate destination for all gaming needs.</p>
-        <input
+    <section class="bg-gradient-to-r from-indigo-300 via-indigo-400 to-sky-500">
+      <div class="max-w-7xl min-h-[80vh] flex flex-col items-center justify-center py-20 gap-6">
+        <h1 class="text-6xl md:text-7xl font-bold font-serif text-center text-white">Welcome to Gamehub</h1>
+        <p class="mt-4 text-gray-100 text-center max-w-2xl">
+          Your ultimate destination for all gaming needs.
+        </p>
+
+        <div class="w-full flex flex-col items-center gap-4 mt-6 px-4">
+          <div class="w-full max-w-xl">
+            <input
               type="search"
               aria-label="Search games"
-              class="search-input border rounded-md pl-10 pr-3 py-2 w-104 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              class="w-full rounded-full px-4 py-2 border border-gray-300 bg-white focus:ring-2 focus:ring-blue-500 focus:outline-none"
               placeholder="Search games..."
             />
-      </div>
-    </section>
+          </div>
+        </div>
 
-    <section class="py-16">
-      <div class="max-w-7xl mx-auto px-4 grid gap-6 grid-cols-1 md:grid-cols-3">
-        <div class="p-6 border rounded-lg flex flex-col justify-center items-center">
-          <h3 class="font-bold">Popular Games</h3>
-        </div>
-        <div class="p-6 border rounded-lg flex flex-col justify-center items-center">
-          <h3 class="font-bold">Popular Games</h3>
-        </div>
-        <div class="p-6 border rounded-lg flex flex-col justify-center items-center">
-          <h3 class="font-bold">Popular Games</h3>
+        <div class="mt-4 flex flex-column justify-center">
+          <button class="bg-blue-400 p-3 rounded-2xl">
+            <a href="/main-page.html"
+              class="text-white font-semibold hover:text-gray-200"
+              >Search</a>
+          </button>
         </div>
       </div>
     </section>
 
-    <footer>
-      <div class="max-w-7xl mx-auto px-4 py-6 text-1xl text-center text-gray">
+    <footer class="bg-gradient-to-r from-black via-grey to-black min-h-[20vh]">
+      <div class="max-w-7xl mx-auto px-4 pt-9 text-1xl text-center text-white">
         © 2026 Gamehub. All rights reserved.
       </div>
     </footer>
   </body>
 </html>
+
+
+    <!-- <section class="py-16 px-10 bg-gray-100">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+          
+          <div class="bg-white shadow-md overflow-hidden rounded-lg flex flex-col">
+            <img src="/src/assets/God_of_War_(2005)_cover.png" alt="God of War cover" class="w-full h-48 object-cover" />
+            <div class="p-4 flex-1 flex flex-col">
+              <h3 class="text-gray-900 text-xl font-semibold">God of War</h3>
+              <p class="mt-2 text-sm text-gray-600">An action-adventure game with epic storytelling and brutal combat.</p>
+              <div class="mt-auto mt-4 flex items-center justify-between">
+                <span class="text-lg font-medium text-gray-900">$9.99</span>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="bg-white shadow-md overflow-hidden rounded-lg flex flex-col">
+            <img src="/src/assets/God_of_War_(2005)_cover.png" alt="Legend Quest cover" class="w-full h-48 object-cover" />
+            <div class="p-4 flex-1 flex flex-col">
+              <h3 class="text-gray-900 text-xl font-semibold">Legend Quest</h3>
+              <p class="mt-2 text-sm text-gray-600">Explore vast worlds and conquer dungeons in this epic adventure.</p>
+              <div class="mt-auto mt-4 flex items-center justify-between">
+                <span class="text-lg font-medium text-gray-900">$14.99</span>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="bg-white shadow-md overflow-hidden rounded-lg flex flex-col">
+            <img src="/src/assets/God_of_War_(2005)_cover.png" alt="Racing Fury cover" class="w-full h-48 object-cover" />
+            <div class="p-4 flex-1 flex flex-col">
+              <h3 class="text-gray-900 text-xl font-semibold">Racing Fury</h3>
+              <p class="mt-2 text-sm text-gray-600">High-speed racing with realistic physics and multiplayer modes.</p>
+              <div class="mt-auto mt-4 flex items-center justify-between">
+                <span class="text-lg font-medium text-gray-900">$7.99</span>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Buy</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> -->
