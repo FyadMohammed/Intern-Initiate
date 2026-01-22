@@ -18,12 +18,4 @@
   z-index: 10; /* ensure caption sits above image */
 }
 
-/* Hide non-active slides until activated */
-[data-carousel-slide][aria-hidden="true"],
-[data-simple-slide][aria-hidden="true"] {
-  visibility: hidden;
-}
-[data-carousel-slide][aria-hidden="false"],
-[data-simple-slide][aria-hidden="false"] {
-  visibility: visible;
-}
+/* aria-hidden for screen readers only; slides stay visually rendered for smooth sliding */

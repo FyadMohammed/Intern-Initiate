@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,26 +8,21 @@
     <title>task-4</title>
 
     <style>
-      /* Ensure track & slides layout so slides do not overlap */
-      [data-carousel-track] {
+      /* Ensure track & slides layout for smooth side-by-side sliding */
+      [data-simple-track] {
         display: flex;
         will-change: transform;
-      }
-      [data-carousel-slide] {
-        flex: 0 0 100%;
-        will-change: transform;
         transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
-        transform: translate(0,0,0);
+        transform: translate3d(0, 0, 0);
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-
       }
-      [data-carousel-slide] {
-        flex : 0 0 100%;
+      [data-simple-slide] {
+        flex: 0 0 100%;
         position: relative;
       }
       /* Make caption show above the image */
-      [data-carousel-slide] .caption {
+      [data-simple-slide] .caption {
         z-index: 10;
       }
     </style>
@@ -70,7 +65,7 @@
     </header>
     <!-- Navigation bar -->
     <nav>
-      <ul class="flex border-gray-300 bg-gray-200">
+      <ul class="flex border-gray-300 bg-sky-200">
         <!-- Item 1 with dropdown -->
         <li class="relative group">
           <button
@@ -244,27 +239,32 @@
       </ul>
     </nav>
     <!-- Main content area -->
-    <section class="max-w-7xl mx-auto px-4 py-12">
+    <section
+      class="max-w-full px-0 mx-auto py-0 bg-gradient-to-r from-indigo-300 via-indigo-400 to-sky-500"
+    >
       <div
         class="relative w-full overflow-hidden"
         data-simple-carousel
         tabindex="0"
       >
         <!-- Track -->
-        <div
-          class="flex transition-transform duration-500"
-          data-simple-track
-          style="transform: translateX(0%)"
-        >
+        <div class="flex" data-simple-track style="transform: translateX(0%)">
           <!-- Slide 1 -->
-          <div class="flex-shrink-0 w-full"
-            data-simple-slide 
-            aria-hidden="false">
-            <img src="/src/assets/gow2-slide.png" 
-              alt="Slide 1" 
-              class="w-full h-96 object-cover" />
-            <div class="absolute left-6 bottom-0 bg-black/60 text-white px-3 py-2 rounded caption">
+          <div
+            class="flex-shrink-0 w-full"
+            data-simple-slide
+            aria-hidden="false"
+          >
+            <img
+              src="/src/assets/gow2-slide.png"
+              alt="Slide 1"
+              class="w-full h-96 object-cover"
+            />
+            <div
+              class="absolute left-6 bottom-0 bg-black/60 text-white px-3 py-2 rounded caption"
+            >
               <h2 class="text-2xl font-semibold">God of War</h2>
+
               <p class="text-sm">Experience the epic journey of Kratos.</p>
             </div>
           </div>
@@ -280,7 +280,9 @@
               alt="Need For Speed"
               class="w-full h-96 object-cover"
             />
-            <div class="absolute left-6 bottom-6 bg-black/60 text-white px-3 py-2 rounded caption">
+            <div
+              class="absolute left-6 bottom-6 bg-black/60 text-white px-3 py-2 rounded caption"
+            >
               <h2 class="text-2xl font-semibold">Need For Speed</h2>
               <p class="text-sm">Experience the greatest racing journey.</p>
             </div>
@@ -304,6 +306,25 @@
               <p class="text-sm">Adventurous mario world.</p>
             </div>
           </div>
+
+          <!-- Slide 4 -->
+          <div
+            class="flex-shrink-0 w-full"
+            data-simple-slide
+            aria-hidden="true"
+          >
+            <img
+              src="/src/assets/Store_BO6PDP_Hero.png"
+              alt="Call of Duty"
+              class="w-full h-96 object-cover"
+            />
+            <div
+              class="absolute left-6 bottom-6 bg-black/60 text-white px-3 py-2 rounded caption"
+            >
+              <h2 class="text-2xl font-semibold">Call of Duty</h2>
+              <p class="text-sm">Experience the ultimate battle.</p>
+            </div>
+          </div>
         </div>
 
         <!-- Controls -->
@@ -324,9 +345,203 @@
       </div>
     </section>
     <!-- Card Section -->
+    <section class="max-w-7xl px-20 py-6">
+      <!-- Filter  -->
+      <div class="flex gap-4 mb-8 justify-center">
+        <button
+          class="px-6 py-2 rounded-full bg-purple-600 text-white hover:bg-purple-800"
+          data-filters="all"
+        >
+          All games (4)
+        </button>
+        <button
+          class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-400"
+          data-filters="Action"
+        >
+          Action (1)
+        </button>
+        <button
+          class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-400"
+          data-filters="Racing"
+        >
+          Racing (2)
+        </button>
+        <button
+          class="px-6 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-400"
+          data-filters="Shooter"
+        >
+          Shooter (1)
+        </button>
+      </div>
+
+      <!-- Content can be added here in the future -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div
+          class="relative flex flex-col border-none shadow-md rounded-lg overflow-hidden bg-white hover:shadow-xl hover:-translate-y-2 duration-300"
+          data-category="Action"
+          data-game-id="1"
+        >
+          <div
+            class="absolute flex px-2 py-0.5 bg-amber-300 text-md top-0 right-0"
+          >
+            <p>20% off</p>
+          </div>
+          <img
+            src="/src/assets/God_of_War_(2005)_cover.png"
+            alt="God of war 2"
+            class="w-full h-50 object-cover transition hover:scale-110 duration-300"
+          />
+          <div
+            class="relative flex flex-col p-6 gap-y-1 justify-start align-center"
+          >
+            <h2 class="text-2xl border-t-1 h-16 overflow-hidden line-clamp-2">
+              God Of War 2
+            </h2>
+            <div
+              class="flex px-2 py-0.5 text-xs rounded-full shadow-lg bg-amber-300 mb-2 w-fit"
+            >
+              <p>Action</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xl font-bold text-green-600">$19.99</p>
+              <div class="text-yellow-500">★★★★☆</div>
+            </div>
+            <button
+              data-add-to-cart
+              class="rounded-2xl shadow-md px-3 py-2 bg-amber-300 w-full hover:bg-amber-400 hover:text-white"
+            >
+              🛒 Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="relative flex flex-col border-none shadow-md rounded-lg overflow-hidden bg-white hover:shadow-xl hover:-translate-y-2 duration-300"
+          data-category="Racing"
+          data-game-id="2"
+        >
+          <div
+            class="absolute flex px-2 py-0.5 bg-green-500 text-white text-md top-0 right-0"
+          >
+            <p>NEW</p>
+          </div>
+          <img
+            src="/src/assets/mario-card.png"
+            alt="Mario Kart"
+            class="w-full h-50 object-cover transition hover:scale-110 duration-300"
+          />
+          <div
+            class="relative flex flex-col p-6 gap-y-1 justify-start align-center"
+          >
+            <h2 class="text-2xl border-t-1 h-16 overflow-hidden line-clamp-2">
+              Mario Kart World
+            </h2>
+            <div
+              class="flex px-2 py-0.5 text-xs rounded-full shadow-lg bg-blue-400 text-white mb-2 w-fit"
+            >
+              <p>Racing</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xl font-bold text-green-600">$49.99</p>
+              <div class="text-yellow-500">★★★★★</div>
+            </div>
+            <button
+              data-add-to-cart
+              class="rounded-2xl shadow-md px-3 py-2 bg-amber-300 w-full hover:bg-amber-400 hover:text-white"
+            >
+              🛒 Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="relative flex flex-col border-none shadow-md rounded-lg overflow-hidden bg-white hover:shadow-xl hover:-translate-y-2 duration-300"
+          data-category="Racing"
+          data-game-id="3"
+        >
+          <div
+            class="absolute flex px-2 py-0.5 bg-red-500 text-white text-md top-0 right-0"
+          >
+            <p>SALE</p>
+          </div>
+          <img
+            src="/src/assets/NFS-UnderCover-Card.png"
+            alt="Need for Speed"
+            class="w-full h-50 object-cover transition hover:scale-110 duration-300"
+          />
+          <div
+            class="relative flex flex-col p-6 gap-y-1 justify-start align-center"
+          >
+            <h2 class="text-2xl border-t h-16 overflow-hidden line-clamp-2">
+              Need for Speed
+            </h2>
+            <div
+              class="flex px-2 py-0.5 text-xs rounded-full shadow-lg bg-blue-400 text-white mb-2 w-fit"
+            >
+              <p>Racing</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xl font-bold text-green-600">$29.99</p>
+              <div class="text-yellow-500">★★★★☆</div>
+            </div>
+            <button
+              data-add-to-cart
+              class="rounded-2xl shadow-md px-3 py-2 bg-amber-300 w-full hover:bg-amber-400 hover:text-white"
+            >
+              🛒 Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="relative flex flex-col border-none shadow-md rounded-lg overflow-hidden bg-white hover:shadow-xl hover:-translate-y-2 duration-300"
+          data-category="Shooter"
+          data-game-id="4"
+        >
+          <div
+            class="absolute flex px-2 py-0.5 bg-orange-500 text-white text-md top-0 right-0"
+          >
+            <p>HOT</p>
+          </div>
+          <img
+            src="/src/assets/COD-card.png"
+            alt="Call of Duty"
+            class="w-full h-50 object-cover transition hover:scale-110 duration-300"
+          />
+          <div
+            class="relative flex flex-col p-6 gap-y-1 justify-start align-center"
+          >
+            <h2 class="text-2xl border-t-1 h-16 overflow-hidden line-clamp-2">
+              Call of Duty: Black Ops 6 (extra lines are added here )
+            </h2>
+            <div
+              class="flex px-2 py-0.5 text-xs rounded-full shadow-lg bg-purple-500 text-white mb-2 w-fit"
+            >
+              <p>Shooter</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xl font-bold text-green-600">$59.99</p>
+              <div class="text-yellow-500">★★★★★</div>
+            </div>
+            <button
+              data-add-to-cart
+              class="rounded-2xl shadow-md px-3 py-2 bg-amber-300 w-full hover:bg-amber-400 hover:text-white"
+            >
+              🛒 Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
 
     <script src="/src/menu.js" defer></script>
     <script src="/src/simple-carousel.js" defer></script>
+    <script src="/src/filter.js" defer></script>
+    <script src="/src/cart.js"></script>
   </body>
 </html>
