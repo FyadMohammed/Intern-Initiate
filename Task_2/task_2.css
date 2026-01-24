@@ -130,7 +130,7 @@ header section {
 
 /* Hero Section */
 .hero {
-    background-image: url("Task_2/T2_cute_housewife_cleaning_kitchen_trans.png");
+    background-image: url("src/T2_cute_housewife_cleaning_kitchen_trans.png");
     width: auto;
     height: 140vh;
     background-color: #455582;
@@ -376,7 +376,7 @@ header section {
         border-radius: 10px;
     }
     
-    a:-webkit-any-link{
+    a{
         color: white;
         cursor: pointer;
         text-decoration: none;

@@ -22,7 +22,7 @@ body{
 /* Header Section */
 
 header{
-    background-image: url("Task_3/hero-bg.png");
+    background-image: url("hero-bg.png");
 }
 /* 1. Logo, Search, select, social media, signup, login */
 
@@ -413,7 +413,7 @@ header{
 
 /* Media Section */
 .media_section{
-    background: url(Task_3/section-bg-1.png);
+    background: url(section-bg-1.png);
 }
 
 .media_class{
