@@ -63,7 +63,9 @@ if (document.querySelector("[data-game-id]")) {
     button.addEventListener("click", () => {
       const card = button.closest("[data-game-id]");
       const productId = card.dataset.gameId;
+      
       console.log(productId);
+      
       addToCart(productId);
       window.location.href = "cart.html";
     });
